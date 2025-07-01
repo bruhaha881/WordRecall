@@ -5,7 +5,6 @@ const checkboxInputs = [
   { check: 'chk-syllables', input: 'syllables-input' },
 ];
 
-// Вмикання/вимикання додаткових полів
 checkboxInputs.forEach(({ check, input }) => {
   const checkbox = document.getElementById(check);
   const inputField = document.getElementById(input);
@@ -16,7 +15,6 @@ checkboxInputs.forEach(({ check, input }) => {
   }
 });
 
-// Обробка натискання кнопки "Знайти слово"
 document.getElementById('search-btn').addEventListener('click', async () => {
   const description = document.getElementById('desc-input').value;
   const firstLetter = document.getElementById('firstletter-input').value;
