@@ -1,0 +1,86 @@
+/* Основне оформлення */
+body {
+  background: #121212;
+  color: #eee;
+  font-family: sans-serif;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Заголовки */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+/* Текстове поле */
+input[type="text"] {
+  padding: 0.5rem;
+  background: #1f1f1f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Блок чекбоксів */
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Кнопка пошуку */
+button#search-btn {
+  background: #eee;
+  color: #121212;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Результати */
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+/* Окреме слово */
+.word-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.word-btn:hover {
+  background: #444;
+}
+
+/* Сховати елемент */
+.hidden {
+  display: none;
+}

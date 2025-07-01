@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WordRecall</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hidden { display: none; }
+    .results {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .word-btn {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>WordRecall</h1>
+  <h2 class="subtitle"><span id="changing-word">...</span> Ні? Не воно?</h2>
+
+  <input type="text" id="main-input" placeholder="Введіть опис, приклад або початкову літеру..." />
+
+  <div class="checkboxes">
+    <label><input type="checkbox" id="chk-description" /> Опис</label>
+    <input type="text" id="desc-input" class="toggle hidden" placeholder="Введіть опис..." />
+
+    <label><input type="checkbox" id="chk-firstletter" /> Початкова літера</label>
+    <input type="text" id="firstletter-input" class="toggle hidden" placeholder="Введіть першу літеру..." />
+
+    <label><input type="checkbox" id="chk-example" /> Приклад речення</label>
+    <input type="text" id="example-input" class="toggle hidden" placeholder="Введіть приклад..." />
+
+    <label><input type="checkbox" id="chk-syllables" /> Кількість складів</label>
+    <input type="text" id="syllables-input" class="toggle hidden" placeholder="Наприклад: 2" />
+  </div>
+
+  <button id="search-btn">Знайти слово</button>
+
+  <div class="results" id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
