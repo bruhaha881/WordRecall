@@ -19,7 +19,7 @@ app.post('/api/wordrecall', async (req, res) => {
     return res.status(400).json({ error: 'Prompt is required' });
   }
 
-  savePrompt(prompt); // 💾 Зберігаємо в базу
+  savePrompt(prompt);
 
   try {
     const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
@@ -36,7 +36,7 @@ app.post('/api/wordrecall', async (req, res) => {
     });
 
     const data = await response.json();
-    console.log("🧠 OpenRouter RAW response:", data); // ← додаємо це
+    console.log("🧠 OpenRouter RAW response:", data);
 
     const reply = data.choices?.[0]?.message?.content?.trim() || '';
     const words = reply
@@ -63,7 +63,6 @@ app.get('/api/popular', (req, res) => {
   });
 });
 
-// API для отримання топ-запитів
 app.get('/api/popular-prompts', (req, res) => {
   getTopPrompts(5, (prompts) => {
     res.json({ prompts });
