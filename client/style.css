@@ -1,4 +1,4 @@
-/* Основне оформлення */
+
 body {
   background: #121212;
   color: #eee;
@@ -9,7 +9,6 @@ body {
   align-items: center;
 }
 
-/* Заголовки */
 h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -21,7 +20,6 @@ h1 {
   margin-bottom: 2rem;
 }
 
-/* Текстове поле */
 input[type="text"] {
   padding: 0.5rem;
   background: #1f1f1f;
@@ -34,7 +32,6 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
-/* Блок чекбоксів */
 .checkboxes {
   display: flex;
   flex-direction: column;
@@ -44,7 +41,6 @@ input[type="text"] {
   max-width: 400px;
 }
 
-/* Кнопка пошуку */
 button#search-btn {
   background: #eee;
   color: #121212;
@@ -56,7 +52,6 @@ button#search-btn {
   margin-top: 1rem;
 }
 
-/* Результати */
 .results {
   display: flex;
   flex-wrap: wrap;
@@ -65,7 +60,6 @@ button#search-btn {
   justify-content: center;
 }
 
-/* Окреме слово */
 .word-btn {
   background: #333;
   color: #fff;
@@ -80,7 +74,6 @@ button#search-btn {
   background: #444;
 }
 
-/* Сховати елемент */
 .hidden {
   display: none;
 }
